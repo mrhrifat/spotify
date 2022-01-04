@@ -1,0 +1,234 @@
+/*
+    Author: Rakibul Hassan Rifat
+    
+*/
+/*
+	==========Index=========
+	01) Global CSS
+    02) Main Section
+    03) Outer Table Section
+	04) Header Section
+    05) Logo Section
+	06) Banner Section
+	07) Free Section
+	08) Line Section
+    09) Premium Section
+    10) Testimonial Section
+    11) Footer Section
+    12) Line Section
+    13) Media Query Section
+	========================
+*/
+/*===== 01) Global CSS Section =====*/
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  font-family: 'Dosis', sans-serif;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+button {
+  background-color: #00E091;
+  padding: 13px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #2DE26D;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*===== 02) Main Section =====*/
+.main {
+  width: 100%;
+  table-layout: fixed;
+  background-color: #ccc;
+  /*===== 03) Outer Table Section =====*/
+  /*===== 02) Main Section End =====*/
+}
+
+.main .outer-table {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  color: #4a4a4a;
+  border-spacing: 0;
+  /*===== 04) Header Section =====*/
+  /*===== 05) Logo Section ======*/
+  /*===== 06) Banner Section =====*/
+  /*===== 07) Free Section ======*/
+  /*===== 08 && 12) Line Section ======*/
+  /*===== 09) Premium Section ======*/
+  /*===== 10) Testimonial Section ======*/
+  /*===== 11) Footer Section ======*/
+  /*===== 03) Outer Table Section End =====*/
+}
+
+.main .outer-table tr .header {
+  background-color: #00E091;
+  text-align: center;
+}
+
+.main .outer-table tr .header table {
+  margin: 0 auto;
+}
+
+.main .outer-table tr .header table a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main .outer-table tr .header table a img {
+  margin: 0 5px;
+  width: 5%;
+  padding: 10px 5px;
+}
+
+.main .outer-table tr .header table a :hover {
+  background-color: #4a4a4a;
+}
+
+.main .outer-table tr .logo {
+  text-align: center;
+}
+
+.main .outer-table tr .logo img {
+  width: 35%;
+}
+
+.main .outer-table tr .banner img {
+  width: 600;
+  max-width: 100%;
+}
+
+.main .outer-table tr .free {
+  padding-bottom: 5px;
+}
+
+.main .outer-table tr .free .context {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .outer-table tr .free .context h3 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.main .outer-table tr .free .context h3 strong {
+  color: #00E091;
+}
+
+.main .outer-table tr .free .context a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main .outer-table tr .line {
+  height: 5px;
+  background-color: #00E091;
+}
+
+.main .outer-table tr .premium {
+  margin: 35px 0;
+  display: block;
+}
+
+.main .outer-table tr .premium table {
+  width: 100%;
+}
+
+.main .outer-table tr .premium table .common {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .outer-table tr .premium table .left img {
+  max-width: 100%;
+}
+
+.main .outer-table tr .premium table .right td h4 {
+  margin: 7px  0;
+}
+
+.main .outer-table tr .premium table .right td button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main .outer-table tr .testimonial {
+  background-color: #00E091;
+}
+
+.main .outer-table tr .testimonial .context {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.main .outer-table tr .footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  display: block;
+}
+
+.main .outer-table tr .footer img {
+  width: 35%;
+}
+
+.main .outer-table tr .footer h3 {
+  margin: 10px;
+}
+
+.main .outer-table tr .footer p {
+  margin: 2px 0;
+}
+
+.main .outer-table tr .footer a {
+  color: #00E091;
+  text-decoration: none;
+}
+
+.main .outer-table tr .footer p:last-child > a {
+  margin: 0 10px;
+}
+
+/*===== 13) Media Query =====*/
+@media (max-width: 550px) {
+  .premium .common {
+    width: 50%;
+    float: none !important;
+    text-align: center;
+  }
+  .premium .left img {
+    max-width: 50% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

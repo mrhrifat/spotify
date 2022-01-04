@@ -1,0 +1,236 @@
+/*
+    Author: Rakibul Hassan Rifat
+    
+*/
+
+/*
+	==========Index=========
+	01) Global CSS
+    02) Main Section
+    03) Outer Table Section
+	04) Header Section
+    05) Logo Section
+	06) Banner Section
+	07) Free Section
+	08) Line Section
+    09) Premium Section
+    10) Testimonial Section
+    11) Footer Section
+    12) Line Section
+    13) Media Query Section
+	========================
+*/
+
+/*===== 01) Global CSS Section =====*/
+html, body{
+    margin: 0;
+    padding:0;
+    background-color: #ccc;
+    font-family: 'Dosis', sans-serif;
+}
+img{
+    border: 0;
+}
+table{
+    border-spacing: 0;
+}
+td{
+    padding: 0;
+}
+button{
+    background-color:#00E091;
+    padding: 13px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+button:hover{
+    background-color: #2DE26D;
+    transform: scale(1.1);
+}
+
+/*===== 02) Main Section =====*/
+.main{
+    width: 100%;
+    table-layout: fixed;
+    background-color: #ccc;
+
+    /*===== 03) Outer Table Section =====*/
+    .outer-table{
+        background-color: #fff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        color: #4a4a4a;
+        border-spacing: 0;
+        
+        /*===== 04) Header Section =====*/
+        tr .header{
+            background-color: #00E091;
+            text-align: center;
+            table{
+                margin: 0 auto;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+    
+                    img{
+                        margin: 0 5px;
+                        width:5%;
+                        padding:10px 5px;
+                    }
+    
+                    :hover{
+                        background-color:#4a4a4a;
+                    }
+                }
+            }
+        }
+
+        /*===== 05) Logo Section ======*/
+        tr .logo{
+            text-align: center;
+
+            img{
+                width: 35%;
+            }
+        }
+
+        /*===== 06) Banner Section =====*/
+        tr .banner{
+            img{
+                width: 600;
+                max-width: 100%;
+            }
+        }
+
+        /*===== 07) Free Section ======*/
+        tr .free{
+            padding-bottom: 5px;
+            .context{
+                width: 75%;
+                display: block;
+                margin:0 auto;
+                text-align: center;
+
+                h3{
+                    font-size: 20px;
+                    margin: 10px;
+
+                    strong{
+                        color:#00E091;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+            }
+        }
+
+        /*===== 08 && 12) Line Section ======*/
+        tr .line{
+            height: 5px;
+            background-color: #00E091;
+        }
+
+        /*===== 09) Premium Section ======*/
+        tr .premium{
+            margin: 35px 0;
+            display: block;
+
+            table{
+                width: 100%;
+
+                .common{
+                    width: 50%;
+                    float: left;
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+                .left{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
+                .right{
+                    td{
+                        h4{
+                            margin:7px  0;
+                        }
+
+                        button{
+                            a{
+                                text-decoration: none;
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /*===== 10) Testimonial Section ======*/
+        tr .testimonial{
+            background-color: #00E091;
+            
+            .context{
+                width: 75%;
+                display: block;
+                margin:0 auto;
+                text-align: center;
+                color: #fff;
+            }
+        }
+
+        /*===== 11) Footer Section ======*/
+        tr .footer{
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px 0;
+            display: block;
+
+            img{
+                width: 35%;
+            }
+            h3{
+                margin:10px;
+            }
+            p{
+                margin: 2px 0;
+            }
+            a{
+                color:#00E091;
+                text-decoration: none;
+            }
+            p:last-child > a{
+                margin: 0 10px;
+            }
+        }
+
+
+
+        /*===== 03) Outer Table Section End =====*/
+    }
+    /*===== 02) Main Section End =====*/
+}
+
+/*===== 13) Media Query =====*/
+@media (max-width:550px){
+    .premium{
+        .common{
+            width: 50%;
+            float: none !important;
+            text-align: center;
+        }
+        .left{
+            img{
+                max-width: 50% !important;
+            }
+        }
+    }
+}
